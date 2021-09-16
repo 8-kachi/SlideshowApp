@@ -13,10 +13,11 @@
 		7B82F5A626EDDCAC00AF46FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B82F5A426EDDCAC00AF46FD /* Main.storyboard */; };
 		7B82F5A826EDDCAE00AF46FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B82F5A726EDDCAE00AF46FD /* Assets.xcassets */; };
 		7B82F5AB26EDDCAE00AF46FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B82F5A926EDDCAE00AF46FD /* LaunchScreen.storyboard */; };
+		7B8E916226F0A3E300AEEB2B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E916126F0A3E300AEEB2B /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B82F59B26EDDCAC00AF46FD /* SlideshowApp_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B82F59B26EDDCAC00AF46FD /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B82F59E26EDDCAC00AF46FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B82F5A026EDDCAC00AF46FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B82F5A226EDDCAC00AF46FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		7B82F5A726EDDCAE00AF46FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B82F5AA26EDDCAE00AF46FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B82F5AC26EDDCAE00AF46FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B8E916126F0A3E300AEEB2B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,15 +42,15 @@
 		7B82F59226EDDCAC00AF46FD = {
 			isa = PBXGroup;
 			children = (
-				7B82F59D26EDDCAC00AF46FD /* SlideshowApp_test */,
 				7B82F59C26EDDCAC00AF46FD /* Products */,
+				7B82F59D26EDDCAC00AF46FD /* SlideshowApp_test */,
 			);
 			sourceTree = "<group>";
 		};
 		7B82F59C26EDDCAC00AF46FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B82F59B26EDDCAC00AF46FD /* SlideshowApp_test.app */,
+				7B82F59B26EDDCAC00AF46FD /* SlideshowApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +61,7 @@
 				7B82F59E26EDDCAC00AF46FD /* AppDelegate.swift */,
 				7B82F5A026EDDCAC00AF46FD /* SceneDelegate.swift */,
 				7B82F5A226EDDCAC00AF46FD /* ViewController.swift */,
+				7B8E916126F0A3E300AEEB2B /* ResultViewController.swift */,
 				7B82F5A426EDDCAC00AF46FD /* Main.storyboard */,
 				7B82F5A726EDDCAE00AF46FD /* Assets.xcassets */,
 				7B82F5A926EDDCAE00AF46FD /* LaunchScreen.storyboard */,
@@ -70,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B82F59A26EDDCAC00AF46FD /* SlideshowApp_test */ = {
+		7B82F59A26EDDCAC00AF46FD /* SlideshowApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B82F5AF26EDDCAE00AF46FD /* Build configuration list for PBXNativeTarget "SlideshowApp_test" */;
+			buildConfigurationList = 7B82F5AF26EDDCAE00AF46FD /* Build configuration list for PBXNativeTarget "SlideshowApp" */;
 			buildPhases = (
 				7B82F59726EDDCAC00AF46FD /* Sources */,
 				7B82F59826EDDCAC00AF46FD /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = SlideshowApp_test;
+			name = SlideshowApp;
 			productName = SlideshowApp_test;
-			productReference = 7B82F59B26EDDCAC00AF46FD /* SlideshowApp_test.app */;
+			productReference = 7B82F59B26EDDCAC00AF46FD /* SlideshowApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B82F59626EDDCAC00AF46FD /* Build configuration list for PBXProject "SlideshowApp_test" */;
+			buildConfigurationList = 7B82F59626EDDCAC00AF46FD /* Build configuration list for PBXProject "SlideshowApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B82F59A26EDDCAC00AF46FD /* SlideshowApp_test */,
+				7B82F59A26EDDCAC00AF46FD /* SlideshowApp */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +143,7 @@
 				7B82F5A326EDDCAC00AF46FD /* ViewController.swift in Sources */,
 				7B82F59F26EDDCAC00AF46FD /* AppDelegate.swift in Sources */,
 				7B82F5A126EDDCAC00AF46FD /* SceneDelegate.swift in Sources */,
+				7B8E916226F0A3E300AEEB2B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +326,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B82F59626EDDCAC00AF46FD /* Build configuration list for PBXProject "SlideshowApp_test" */ = {
+		7B82F59626EDDCAC00AF46FD /* Build configuration list for PBXProject "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B82F5AD26EDDCAE00AF46FD /* Debug */,
@@ -331,7 +335,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B82F5AF26EDDCAE00AF46FD /* Build configuration list for PBXNativeTarget "SlideshowApp_test" */ = {
+		7B82F5AF26EDDCAE00AF46FD /* Build configuration list for PBXNativeTarget "SlideshowApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B82F5B026EDDCAE00AF46FD /* Debug */,
