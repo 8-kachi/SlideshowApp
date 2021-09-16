@@ -111,9 +111,12 @@
                                     <constraint firstAttribute="height" constant="700" id="Ns9-I0-nyX"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMy-GZ-8xZ">
-                                <rect key="frame" x="376" y="700" width="31" height="30"/>
-                                <state key="normal" title="戻る"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMy-GZ-8xZ">
+                                <rect key="frame" x="0.0" y="700" width="414" height="30"/>
+                                <color key="backgroundColor" red="0.71113640069961548" green="0.9345821738243103" blue="0.72000080347061157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="0.29369053244590759" green="0.31309279799461365" blue="0.069966740906238556" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="eyU-a9-SEJ" kind="unwind" unwindAction="unwind:" id="l5D-x1-BcO"/>
                                 </connections>
@@ -125,6 +128,7 @@
                             <constraint firstItem="alV-H7-hzU" firstAttribute="bottom" secondItem="Sc4-bc-qtG" secondAttribute="bottom" constant="78" id="6X2-AY-lC6"/>
                             <constraint firstItem="Vc5-Zx-ds9" firstAttribute="trailing" secondItem="alV-H7-hzU" secondAttribute="trailing" id="Cvx-Ma-ufn"/>
                             <constraint firstItem="SMy-GZ-8xZ" firstAttribute="top" secondItem="Vc5-Zx-ds9" secondAttribute="bottom" id="Gnc-N2-kdO"/>
+                            <constraint firstItem="SMy-GZ-8xZ" firstAttribute="leading" secondItem="alV-H7-hzU" secondAttribute="leading" id="KY7-4o-xuL"/>
                             <constraint firstItem="Vc5-Zx-ds9" firstAttribute="leading" secondItem="alV-H7-hzU" secondAttribute="leading" id="Lr4-Dp-0aZ"/>
                             <constraint firstItem="Sc4-bc-qtG" firstAttribute="top" secondItem="Vc5-Zx-ds9" secondAttribute="bottom" id="U5O-GA-AUj"/>
                             <constraint firstItem="Sc4-bc-qtG" firstAttribute="leading" secondItem="Vc5-Zx-ds9" secondAttribute="leading" id="h4q-JK-Ugc"/>

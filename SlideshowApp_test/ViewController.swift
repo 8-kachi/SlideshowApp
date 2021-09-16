@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -52,6 +53,8 @@ class ViewController: UIViewController {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
             
             startButton.setTitle("停止", for: .normal)
+            nextButton.isEnabled = false
+            prevButton.isEnabled = false
             
         } else {
             
@@ -60,13 +63,15 @@ class ViewController: UIViewController {
             timer = nil
             
             startButton.setTitle("再生", for: .normal)
+            nextButton.isEnabled = true
+            prevButton.isEnabled = true
             
         }
     }
     
     //進むボタン
     @IBAction func nextShowButton(_ sender: Any) {
-        if (timer == nil) {
+        if (startButton.currentTitle == "再生") {
             
             changeImage()
             
@@ -75,7 +80,7 @@ class ViewController: UIViewController {
     
     //戻るボタン
     @IBAction func prevShowButton(_ sender: Any) {
-        if (timer == nil) {
+        if (startButton.currentTitle == "再生") {
             
             backchangeImage()
             
